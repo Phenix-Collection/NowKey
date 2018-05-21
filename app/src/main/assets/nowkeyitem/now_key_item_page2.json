@@ -1,0 +1,42 @@
+[
+    {
+        index: 0,
+        type: 2,
+        key_word: "camera"
+    },
+    {
+        index: 1,
+        type: 2,
+        key_word: "micorvideo"
+    },
+    {
+        index: 2,
+        type: 2,
+        key_word: "recognisesongs"
+    },
+    {
+        index: 3,
+        type: 2,
+        key_word: "musicplaylist"
+    },
+    {
+        index: 4,
+        type: 2,
+        key_word: "email"
+    },
+    {
+        index: 5,
+        type: 2,
+        key_word: "chat"
+    },
+    {
+        index: 6,
+        type: 2,
+        key_word: "calendar"
+    },
+    {
+        index: 7,
+        type: 2,
+        key_word: "googlevoice"
+    }
+]

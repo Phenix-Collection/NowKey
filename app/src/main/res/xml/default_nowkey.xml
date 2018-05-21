@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultnowkey xmlns:nowkey="http://schemas.android.com/apk/res-auto/com.kuding.nowkey">
+    <!--public static final int GROUP_APP_ID = 0;-->
+    <!--public static final int GROUP_OPERATION_ID = 1;-->
+    <!--public static final int GROUP_FUNCTION_ID = 2;-->
+    <!--public static final int GROUP_TOOL_ID = 3;-->
+    <!--public static final int GROUP_ALCATEL_ID = 4;-->
+    <item
+        nowkey:group="0"
+        nowkey:key_word="apps" />
+
+    <item
+        nowkey:group="1"
+        nowkey:key_word="home" />
+    <item
+        nowkey:group="1"
+        nowkey:key_word="recent" />
+    <item
+        nowkey:group="1"
+        nowkey:key_word="back" />
+
+    <item
+        nowkey:group="1"
+        nowkey:key_word="splitscreen" />
+
+    <item
+        nowkey:group="2"
+        nowkey:key_word="bluetooth" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="network" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="wifi" />
+    <!--<item-->
+        <!--nowkey:group="2"-->
+        <!--nowkey:key_word="rotation" />-->
+    <item
+        nowkey:group="2"
+        nowkey:key_word="gps" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="flightmode" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="settings" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="sound" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="lock" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="notification" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="display" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="sync" />
+    <item
+        nowkey:group="2"
+        nowkey:key_word="screenshot" />
+    <item
+        nowkey:group="3"
+        nowkey:key_word="alarm" />
+    <item
+        nowkey:group="3"
+        nowkey:key_word="nsettings" />
+    <!--<item-->
+        <!--nowkey:group="3"-->
+        <!--nowkey:key_word="booster" />-->
+    <!--<item-->
+        <!--nowkey:group="3"-->
+        <!--nowkey:key_word="alexa" />-->
+    <!--<item-->
+        <!--nowkey:group="3"-->
+        <!--nowkey:key_word="colorcatcher" />-->
+
+
+    <item
+        nowkey:group="4"
+        nowkey:key_word="callacontact" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="recentcontact" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="micorvideo" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="camera" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="light" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="soundrecording" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="timer" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="calculator" />
+    <!--<item-->
+        <!--nowkey:group="4"-->
+        <!--nowkey:key_word="navigatehome" />-->
+    <!--<item-->
+        <!--nowkey:group="4"-->
+        <!--nowkey:key_word="musicplaylist" />-->
+    <item
+        nowkey:group="4"
+        nowkey:key_word="chat" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="email" />
+
+    <item
+        nowkey:group="4"
+        nowkey:key_word="addacontact" />
+    <item
+        nowkey:group="4"
+        nowkey:key_word="event" />
+
+    <!--<item-->
+        <!--nowkey:group="4"-->
+        <!--nowkey:key_word="googlevoice" />-->
+
+</defaultnowkey>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- no translation found for application_name -->
+	<skip />
+	<!--translate [app_name] from sourcecode xml -->
+	<string name="app_name">"Super Ball"</string>
+	<!---->
+	<string name="app_settings_title">"设置"</string>
+	<!---->
+	<string name="floating_menu_app_name">"应用"</string>
+	<!---->
+	<string name="app_list_edittext_hint">"搜索…"</string>
+	<!---->
+	<string name="now_key_add_duplicated">"该选项已添加"</string>
+	<!---->
+	<string name="now_key_option_gesture_title">"手势"</string>
+	<!---->
+	<string name="now_key_option_theme_title">"主题"</string>
+	<!---->
+	<string name="now_key_option_display_title">"显示设置"</string>
+	<!---->
+	<string name="now_key_option_help_title">"帮助"</string>
+	<!---->
+	<string name="now_key_option_double_click_title">"双击"</string>
+	<!---->
+	<string name="now_key_option_long_click_title">"长按"</string>
+	<!---->
+	<string name="now_key_function_header_apps">"应用"</string>
+	<!---->
+	<string name="now_key_function_apps_item">"所有应用"</string>
+	<!---->
+	<string name="now_key_function_header_operation">"操作"</string>
+	<!---->
+	<string name="now_key_function_operation_home">"主界面"</string>
+	<!---->
+	<string name="now_key_function_operation_recent">"最近任务"</string>
+	<!---->
+	<string name="now_key_function_operation_back">"返回"</string>
+	<!---->
+	<string name="now_key_function_operation_splitscreen">"分屏"</string>
+	<!---->
+	<string name="now_key_function_header_function">"功能"</string>
+	<!---->
+	<string name="now_key_function_function_bluetooth">"蓝牙"</string>
+	<!---->
+	<string name="now_key_function_function_light">"手电筒"</string>
+	<!---->
+	<string name="now_key_function_function_network">"网络"</string>
+	<!---->
+	<string name="now_key_function_function_wifi">"WLAN"</string>
+	<!---->
+	<string name="now_key_function_function_rotation">"自动旋转"</string>
+	<!---->
+	<string name="now_key_function_function_gps">"位置"</string>
+	<!---->
+	<string name="now_key_function_function_flightmode">"飞行模式"</string>
+	<!---->
+	<string name="now_key_function_function_setting">"设置"</string>
+	<!---->
+	<string name="now_key_function_function_sound">"声音"</string>
+	<!---->
+	<string name="now_key_function_function_lock">"锁定屏幕"</string>
+	<!---->
+	<string name="now_key_function_function_notification">"通知栏"</string>
+	<!---->
+	<string name="now_key_function_function_display">"显示"</string>
+	<!---->
+	<string name="now_key_function_function_sync">"帐户"</string>
+	<!---->
+	<string name="now_key_function_function_screenshot">"截图"</string>
+	<!---->
+	<string name="now_key_function_function_gallery">"相册"</string>
+	<!---->
+	<string name="now_key_function_function_addacontact">"添加联系人"</string>
+	<!---->
+	<string name="now_key_function_function_booster">"优化"</string>
+	<!-- no translation found for now_key_function_function_alexa -->
+	<skip />
+	<!---->
+	<string name="now_key_function_function_colorcatcher">"Color Catcher"</string>
+	<!---->
+	<string name="now_key_function_header_tool">"工具"</string>
+	<!---->
+	<string name="now_key_function_tool_alarm">"闹钟"</string>
+	<!---->
+	<string name="now_key_function_tool_camera">"相机"</string>
+	<!---->
+	<string name="now_key_function_tool_calculator">"计算器"</string>
+	<!---->
+	<string name="now_key_function_tool_calendar">"日历"</string>
+	<!---->
+	<string name="now_key_function_header_phone">"电话"</string>
+	<!---->
+	<string name="now_key_function_phone_call">"拨打电话"</string>
+	<!---->
+	<string name="now_key_function_phone_chat">"新信息"</string>
+	<!---->
+	<string name="now_key_function_phone_recentcontact">"最近联系人"</string>
+	<!---->
+	<string name="now_key_function_phone_contact">"联系人"</string>
+	<!---->
+	<string name="now_key_function_header_alcatel">"Alcatel"</string>
+	<!---->
+	<string name="now_key_function_alcatel_selfie">"自拍"</string>
+	<!---->
+	<string name="now_key_function_alcatel_microvideo">"拍摄视频"</string>
+	<!---->
+	<string name="now_key_function_alcatel_googlevoice">"Google Voice"</string>
+	<!---->
+	<string name="now_key_function_alcatel_event">"新建活动"</string>
+	<!---->
+	<string name="now_key_function_alcatel_email">"新邮件"</string>
+	<!---->
+	<string name="now_key_function_alcatel_musicplaylist">"开启播放列表"</string>
+	<!---->
+	<string name="now_key_function_alcatel_recognisesongs">"识别歌曲"</string>
+	<!---->
+	<string name="now_key_function_alcatel_navigationhome">"导航首页"</string>
+	<!---->
+	<string name="now_key_function_alcatel_timer">"计时器"</string>
+	<!---->
+	<string name="now_key_function_alcatel_soundrecording">"声音录制"</string>
+	<!---->
+	<string name="now_key_function_alcatel_callacontact">"快捷联系人"</string>
+	<!-- no translation found for screenshot_saving_ticker -->
+	<skip />
+	<!-- no translation found for screenshot_saving_title -->
+	<skip />
+	<!---->
+	<string name="screenshot_saving_text">"截图已保存"</string>
+	<!---->
+	<string name="screenshot_saved_title">"屏幕截图"</string>
+	<!---->
+	<string name="screenshot_saved_text">"点击查看截图。"</string>
+	<!---->
+	<string name="screenshot_failed_title">"无法截图"</string>
+	<!---->
+	<string name="screenshot_failed_to_save_text">"内存不足，无法保存截图。"</string>
+	<!---->
+	<string name="screenshot_failed_to_capture_text">"应用或者系统不允许截图"</string>
+	<!---->
+	<string name="share">"分享"</string>
+	<!---->
+	<string name="delete">"删除"</string>
+	<!---->
+	<string name="accessibilityservice_dialog_title">"辅助服务"</string>
+	<!---->
+	<string name="accessibilityservice_title">"Super Ball"</string>
+	<!---->
+	<string name="accessibilityservice_dialog_content">"需打开Super Ball辅助服务以支持该功能。"</string>
+	<!---->
+	<string name="accessibilityservice_dialog_button_ok">"打开"</string>
+	<!-- no translation found for accessibilityservice_dialog_button_cancel -->
+	<skip />
+	<!---->
+	<string name="accessibility_service_description">"Super Ball集成了那些使您能更加快捷方便使用手机的功能。"</string>
+	<!---->
+	<string name="shazam_not_installed">"Shazam未安装"</string>
+	<!---->
+	<string name="calendar_not_installed">"日历未安装"</string>
+	<!---->
+	<string name="calculator_not_installed">"计算器未安装"</string>
+	<!---->
+	<string name="google_voicd_not_installed">"Google Voice未安装"</string>
+	<!---->
+	<string name="music_not_installed">"Music未安装"</string>
+	<!---->
+	<string name="overlay_permission_denied">"屏幕叠层权限限制"</string>
+	<!---->
+	<string name="now_key_item_delete_warning">"您将会删除所有Super Ball快捷方式，同时关闭Super Ball。"</string>
+	<!---->
+	<string name="now_key_item_delete_warning_yes">"是"</string>
+	<!---->
+	<string name="now_key_item_delete_warning_no">"否"</string>
+	<!---->
+	<string name="now_key_function_function_sound_ring">"响铃"</string>
+	<!---->
+	<string name="now_key_function_function_sound_mute">"静音"</string>
+	<!---->
+	<string name="now_key_function_function_sound_vibrate">"震动"</string>
+	<!---->
+	<string name="now_key_reset">"重置"</string>
+	<!---->
+	<string name="now_key_call_a_contact_no_number">"没有号码"</string>
+	<!---->
+	<string name="now_key_app_not_exist">"该应用不存在或已被卸载"</string>
+	<!---->
+	<string name="now_key_reset_dialog_title">"重置"</string>
+	<!---->
+	<string name="now_key_reset_dialog_content">"继续重置Super Ball所有选项"</string>
+	<!---->
+	<string name="now_key_reset_dialog_yes">"继续"</string>
+	<!-- no translation found for now_key_reset_dialog_no -->
+	<skip />
+	<!---->
+	<string name="button_cancel">"取消"</string>
+	<!---->
+	<string name="now_key_reset_toast">"Super Ball重置完成"</string>
+	<!---->
+	<string name="alexa_app_error">"非常抱歉，无法打开Alexa！"</string>
+	<!---->
+	<string name="action_none">"无"</string>
+	<!---->
+	<string name="now_key_display_border_title">"自动靠边"</string>
+	<!---->
+	<string name="now_key_shortcut_settings_title">"Super Ball快捷方式"</string>
+	<!---->
+	<string name="func_Shortcutsinscreen_title">"主菜单"</string>
+	<!---->
+	<string name="func_Shortcutsinscreen_title_second">"第二页"</string>
+	<!---->
+	<string name="func_illustration">"Super Ball允许用户在任何界面进入特定的应用"</string>
+	<!---->
+	<string name="now_key_option_edit_title">"快捷方式设置"</string>
+	<!---->
+	<string name="help_gesutre_title">"如何设置手势？"</string>
+	<!---->
+	<string name="help_gesutre_summary">"用户可以通过“双击”或“长按”悬浮球进入不同的功能。每一个手势都可以根据用户自定义。"</string>
+	<!---->
+	<string name="help_edit_title">"如何编辑悬浮窗？"</string>
+	<!---->
+	<string name="help_edit_short_description">"长按快捷方式开始编辑悬浮菜单。"</string>
+	<!---->
+	<string name="help_edit_summary">"用户可以通过长按快捷方式开始编辑悬浮菜单，包括删除和添加。"</string>
+	<!---->
+	<string name="help_dialog_tips_button">"我知道"</string>
+	<!---->
+	<string name="nowkey_size_summary">"Super Ball大小"</string>
+	<!---->
+	<string name="nowkey_opacity_summary">"Super Ball透明度"</string>
+	<!---->
+	<string name="nowkey_mode">"模式"</string>
+	<!---->
+	<string name="nowkey_mode_normal">"普通"</string>
+	<!---->
+	<string name="nowkey_mode_mini">"迷你"</string>
+	<!---->
+	<string name="now_key_option_gesture_and_function_title">"功能 &amp; 手势"</string>
+	<!-- no translation found for three -->
+	<skip />
+	<!-- no translation found for four -->
+	<skip />
+	<!-- no translation found for five -->
+	<skip />
+	<!-- no translation found for seven -->
+	<skip />
+	<!-- no translation found for eight -->
+	<skip />
+	<!---->
+	<string name="double_tap">"双击"</string>
+	<!---->
+	<string name="short_drag">"短拉"</string>
+	<!---->
+	<string name="set_as">"设置为"</string>
+	<!---->
+	<string name="nowkey_restored">"恢复设置"</string>
+	<!---->
+	<string name="nowkey_undo">"撤消"</string>
+	<!---->
+	<string name="nowkey_introduce_short_drag">"拖动悬浮球到圆环中释放，可以触发短拉事件。此事件默认功能是返回，\n\n您可以在Super Ball设置中改变其功能。"</string>
+</resources>

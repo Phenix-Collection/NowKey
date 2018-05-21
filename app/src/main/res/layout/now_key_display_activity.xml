@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg_color"
+    android:orientation="vertical"
+    tools:context="com.kuding.nowkey.NowKeyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:id="@+id/now_key_border_all_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_item_bg_color">
+
+                <LinearLayout
+                    android:id="@+id/now_key_border_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingEnd="@dimen/setting_item_padding"
+                    android:paddingStart="@dimen/setting_item_padding">
+
+
+                    <ImageView
+                        android:id="@+id/img_broder"
+                        android:layout_width="@dimen/setting_icon_width"
+                        android:layout_height="@dimen/setting_icon_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_border"
+                        android:tint="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/now_key_border_textview"
+                            style="@style/settings_text_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|start"
+                            android:paddingStart="@dimen/setting_title_icon_padding"
+                            android:text="@string/now_key_display_border_title" />
+                    </LinearLayout>
+
+
+                    <Switch
+                        android:id="@+id/now_key_border_switcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_item_bg_color">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                    android:paddingTop="2dp">
+
+                    <com.kuding.nowkey.DotsPageIndicator
+                        android:id="@+id/page_indicator"
+                        style="@style/PreviewPagerPageIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="6dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/settings_text_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|start"
+                            android:paddingStart="@dimen/setting_title_icon_padding"
+                            android:text="@string/nowkey_size_summary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="8dp">
+
+                        <com.kuding.nowkey.LabeledSeekBar
+                            android:id="@+id/seek_bar"
+                            style="@android:style/Widget.Material.SeekBar.Discrete"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_item_bg_color">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                    android:paddingTop="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/settings_text_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|start"
+                            android:paddingStart="@dimen/setting_title_icon_padding"
+                            android:text="@string/nowkey_opacity_summary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="8dp">
+
+                        <SeekBar
+                            android:id="@+id/seekBar"
+                            style="@android:style/Widget.Material.SeekBar"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"></SeekBar>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

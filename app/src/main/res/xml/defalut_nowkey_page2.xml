@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultpage xmlns:nowkey="http://schemas.android.com/apk/res-auto/com.kuding.nowkey">
+    <item
+        nowkey:index="0"
+        nowkey:type="2"
+        nowkey:key_word_page="soundrecording" />
+    <item
+        nowkey:index="1"
+        nowkey:type="2"
+        nowkey:key_word_page="musicplaylist" />
+    <item
+        nowkey:index="2"
+        nowkey:type="2"
+        nowkey:key_word_page="camera" />
+    <item
+        nowkey:index="3"
+        nowkey:type="2"
+        nowkey:key_word_page="micorvideo" />
+    <item
+        nowkey:index="4"
+        nowkey:type="2"
+        nowkey:key_word_page="calendar" />
+    <item
+        nowkey:index="5"
+        nowkey:type="2"
+        nowkey:key_word_page="email" />
+    <item
+        nowkey:index="6"
+        nowkey:type="2"
+        nowkey:key_word_page="chat" />
+    <item
+        nowkey:index="7"
+        nowkey:type="2"
+        nowkey:key_word_page="googlevoice" />
+
+</defaultpage>

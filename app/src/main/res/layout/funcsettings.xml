@@ -1,0 +1,88 @@
+<!-- CR 674472 add by rurong.zhang   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/func_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/funcsettings_titletext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="@string/func_Shortcutsinscreen_title" />
+
+            <com.kuding.nowkey.drag.DragSortListView
+                xmlns:dslv="http://schemas.android.com/apk/res/com.kuding.nowkey"
+                android:id="@+id/drag_sort_list_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:choiceMode="multipleChoice"
+                android:dividerHeight="1px"
+                android:padding="3dp"
+                dslv:click_remove_id="@id/click_remove"
+                dslv:collapsed_height="1px"
+                dslv:drag_enabled="true"
+                dslv:drag_handle_id="@id/dragicon"
+                dslv:drag_scroll_start="0.33"
+                dslv:drag_start_mode="onDown"
+                dslv:float_alpha="0.6"
+                dslv:remove_enabled="true"
+                dslv:remove_mode="clickRemove"
+                dslv:slide_shuffle_speed="0.3" />
+
+            <TextView
+                style="@style/funcsettings_titletext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="@string/func_Shortcutsinscreen_title_second" />
+
+            <com.kuding.nowkey.drag.DragSortListView
+                xmlns:dslv="http://schemas.android.com/apk/res/com.kuding.nowkey"
+                android:id="@+id/drag_sort_list_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:choiceMode="multipleChoice"
+                android:dividerHeight="1px"
+                android:padding="3dp"
+                dslv:click_remove_id="@id/click_remove"
+                dslv:collapsed_height="1px"
+                dslv:drag_enabled="true"
+                dslv:drag_handle_id="@id/dragicon"
+                dslv:drag_scroll_start="0.33"
+                dslv:drag_start_mode="onDown"
+                dslv:float_alpha="0.6"
+                dslv:remove_enabled="true"
+                dslv:remove_mode="clickRemove"
+                dslv:slide_shuffle_speed="0.3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/func_illustrationtv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/func_illustration"
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

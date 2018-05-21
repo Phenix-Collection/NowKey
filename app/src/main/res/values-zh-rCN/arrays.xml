@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string-array name="theme_colors_title">
+		<item>"默认"</item>
+		<item>"蓝色"</item>
+		<item>"绿色"</item>
+		<item>"黄色"</item>
+		<item>"红色"</item>
+		<item>"粉色"</item>
+		<item>"紫色"</item>
+	</string-array>
+	<!-- no translation found for entries_floatview_size -->
+	<skip />
+</resources>

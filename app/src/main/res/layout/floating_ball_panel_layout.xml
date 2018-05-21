@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kuding.nowkey.floatview.FloatingPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/panel_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <com.kuding.nowkey.floatview.FloatingBallPanel
+        android:id="@+id/id_circle_panel_first"
+        android:layout_width="@dimen/now_key_float_panel_width"
+        android:layout_height="@dimen/now_key_float_panel_width"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/id_circle_menu_item_center_first"
+            android:layout_width="@dimen/now_key_float_panel_center_width"
+            android:layout_height="@dimen/now_key_float_panel_center_width"
+            android:background="@drawable/launch_normal_bg_small">
+
+            <ImageView
+                android:id="@+id/first_panel_center"
+                android:layout_width="@dimen/now_key_item_icon_width"
+                android:layout_height="@dimen/now_key_item_icon_width"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+    </com.kuding.nowkey.floatview.FloatingBallPanel>
+
+    <com.kuding.nowkey.floatview.FloatingBallPanel
+        android:id="@+id/id_circle_panel_second"
+        android:layout_width="@dimen/now_key_float_panel_width"
+        android:layout_height="@dimen/now_key_float_panel_width"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/id_circle_menu_item_center_second"
+            android:layout_width="@dimen/now_key_float_panel_center_width"
+            android:layout_height="@dimen/now_key_float_panel_center_width"
+            android:background="@drawable/launch_normal_bg_small">
+
+            <ImageView
+                android:id="@+id/second_panel_center"
+                android:layout_width="@dimen/now_key_item_icon_width"
+                android:layout_height="@dimen/now_key_item_icon_width"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+    </com.kuding.nowkey.floatview.FloatingBallPanel>
+
+    <include
+        android:id="@+id/panel_warning_dialog"
+        layout="@layout/custom_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</com.kuding.nowkey.floatview.FloatingPanelFrameLayout>

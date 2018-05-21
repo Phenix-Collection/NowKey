@@ -1,0 +1,42 @@
+[
+    {
+        index: 0,
+        type: 2,
+        key_word: "home"
+    },
+    {
+        index: 1,
+        type: 2,
+        key_word: "recent"
+    },
+    {
+        index: 2,
+        type: 2,
+        key_word: "callacontact"
+    },
+    {
+        index: 3,
+        type: 2,
+        key_word: "recentcontact"
+    },
+    {
+        index: 4,
+        type: 2,
+        key_word: "selfie"
+    },
+    {
+        index: 5,
+        type: 2,
+        key_word: "nsettings"
+    },
+    {
+        index: 6,
+        type: 2,
+        key_word: "soundrecording"
+    },
+    {
+        index: 7,
+        type: 2,
+        key_word: "lock"
+    }
+]

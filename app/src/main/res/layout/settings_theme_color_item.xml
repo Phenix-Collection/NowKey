@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_theme_title_height"
+        android:background="@color/setting_item_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_theme_title_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:paddingRight="@dimen/setting_item_padding">
+
+            <RelativeLayout
+                android:layout_width="@dimen/setting_theme_title_height"
+                android:layout_height="@dimen/setting_theme_title_height">
+
+                <com.kuding.nowkey.floatview.RoundImageView
+                    android:id="@+id/theme_color_icon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/usericon_bg_circle" />
+
+                <ImageView
+                    android:id="@+id/theme_select_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/seleted"
+                    android:tint="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/theme_item_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:paddingStart="@dimen/setting_title_icon_padding"
+                android:text="@string/now_key_option_theme_title"
+                android:textColor="@color/setting_title_text_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+
+</LinearLayout>

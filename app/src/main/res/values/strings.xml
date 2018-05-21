@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="application_name">"Super Ball"</string>
+    <string name="app_name">"Super Ball"</string>
+    <string name="app_settings_title">"Settings"</string>
+    <string name="floating_menu_app_name">"APP"</string>
+    <string name="app_list_edittext_hint">"Search…"</string>
+    <string name="now_key_add_duplicated">"This item is added"</string>
+    <string name="now_key_option_gesture_title">"Gesture"</string>
+    <string name="now_key_option_theme_title">"Theme"</string>
+    <string name="now_key_option_display_title">"Display setting"</string>
+    <string name="now_key_option_help_title">"Help &amp; tips"</string>
+    <string name="now_key_option_double_click_title">"Double-click"</string>
+    <string name="now_key_option_long_click_title">"Long press"</string>
+    <string name="now_key_function_header_apps">"Apps"</string>
+    <string name="now_key_function_apps_item">"Apps"</string>
+    <string name="now_key_function_header_operation">"Operations"</string>
+    <string name="now_key_function_operation_home">"Home"</string>
+    <string name="now_key_function_operation_recent">"Recent"</string>
+    <string name="now_key_function_operation_back">"Back"</string>
+    <string name="now_key_function_operation_splitscreen">"Split screen"</string>
+    <string name="now_key_function_header_function">"Functions"</string>
+    <string name="now_key_function_function_bluetooth">"Bluetooth"</string>
+    <string name="now_key_function_function_light">"Flashlight"</string>
+    <string name="now_key_function_function_network">"Network"</string>
+    <string name="now_key_function_function_wifi">"Wi-Fi"</string>
+    <string name="now_key_function_function_rotation">"Auto-rotate"</string>
+    <string name="now_key_function_function_gps">"Location"</string>
+    <string name="now_key_function_function_flightmode">"Aeroplane mode"</string>
+    <string name="now_key_function_function_setting">"Settings"</string>
+    <string name="now_key_function_function_sound">"Sound"</string>
+    <string name="now_key_function_function_lock">"Lock screen"</string>
+    <string name="now_key_function_function_notification">"Notification"</string>
+    <string name="now_key_function_function_display">"Display"</string>
+    <string name="now_key_function_function_sync">"Accounts"</string>
+    <string name="now_key_function_function_screenshot">"Screenshot"</string>
+    <string name="now_key_function_function_gallery">"Gallery"</string>
+    <string name="now_key_function_function_addacontact">"Add Contact"</string>
+    <string name="now_key_function_function_booster">"Boost"</string>
+    <string name="now_key_function_function_alexa">"Alexa"</string>
+    <string name="now_key_function_function_colorcatcher">"Color Catcher"</string>
+    <string name="now_key_function_header_tool">"Tools"</string>
+    <string name="now_key_function_tool_alarm">"Alarm"</string>
+    <string name="now_key_function_tool_camera">"Camera"</string>
+    <string name="now_key_function_tool_calculator">"Calculator"</string>
+    <string name="now_key_function_tool_calendar">"Calendar"</string>
+    <string name="now_key_function_header_phone">"Phone"</string>
+    <string name="now_key_function_phone_call">"Call"</string>
+    <string name="now_key_function_phone_chat">"New message"</string>
+    <string name="now_key_function_phone_recentcontact">"Recent contact"</string>
+    <string name="now_key_function_phone_contact">"Contact"</string>
+    <string name="now_key_function_header_alcatel">"Alcatel"</string>
+    <string name="now_key_function_alcatel_selfie">"Selfie"</string>
+    <string name="now_key_function_alcatel_microvideo">"Take a video"</string>
+    <string name="now_key_function_alcatel_googlevoice">"Google voice"</string>
+    <string name="now_key_function_alcatel_event">"New event"</string>
+    <string name="now_key_function_alcatel_email">"New email"</string>
+    <string name="now_key_function_alcatel_musicplaylist">"Start music playlist"</string>
+    <string name="now_key_function_alcatel_recognisesongs">"Recognise songs"</string>
+    <string name="now_key_function_alcatel_navigationhome">"Navigation home"</string>
+    <string name="now_key_function_alcatel_timer">"Timer"</string>
+    <string name="now_key_function_alcatel_soundrecording">"Sound recording"</string>
+    <string name="now_key_function_alcatel_callacontact">"Call a contact"</string>
+
+    <!-- Notification ticker displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=30] -->
+    <string name="screenshot_saving_ticker">"Saving screenshot..."</string>
+    <!-- Notification title displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=50] -->
+    <string name="screenshot_saving_title">"Saving screenshot..."</string>
+    <!-- Notification text displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=100] -->
+    <string name="screenshot_saving_text">"Screenshot is being saved"</string>
+    <!-- Notification title displayed when a screenshot is saved to the Gallery. [CHAR LIMIT=50] -->
+    <string name="screenshot_saved_title">"Screenshot captured."</string>
+    <!-- Notification text displayed when a screenshot is saved to the Gallery. [CHAR LIMIT=100] -->
+    <string name="screenshot_saved_text">"Touch to view your screenshot."</string>
+    <!-- Notification title displayed when we fail to take a screenshot. [CHAR LIMIT=50] -->
+    <string name="screenshot_failed_title">"Couldn\'t capture screenshot"</string>
+    <!-- Notification text displayed when we fail to save a screenshot. [CHAR LIMIT=100] -->
+    <string name="screenshot_failed_to_save_text">"Can\'t save screenshot due to limited storage space."</string>
+    <!-- Notification text displayed when we fail to take a screenshot. [CHAR LIMIT=100] -->
+    <string name="screenshot_failed_to_capture_text">"Taking screenshots is not allowed by the app or your organization"</string>
+    <string name="share">"Share"</string>
+    <string name="delete">"Delete"</string>
+
+    <string name="accessibilityservice_dialog_title">"Accessibility Service"</string>
+    <!-- add by yangzhong.gong for task-4394007 begin -->
+    <string name="accessibilityservice_title">"Super Ball"</string>
+    <!-- add by yangzhong.gong for task-4394007 end -->
+    <string name="accessibilityservice_dialog_content">"To support this function, you need to open the Super Ball Accessibility Service."</string>
+    <string name="accessibilityservice_dialog_button_ok">"Go to open"</string>
+    <string name="accessibilityservice_dialog_button_cancel">@string/button_cancel</string>
+    <string name="accessibility_service_description">"Super Ball integrates those functions that allow you to use your phone more conveniently and quickly."</string>
+    <string name="shazam_not_installed">"App Shazam is not installed"</string>
+    <string name="calendar_not_installed">"App Calendar is not installed"</string>
+    <string name="calculator_not_installed">"App Calculator is not installed"</string>
+    <string name="google_voicd_not_installed">"App Goggle Voice is not installed"</string>
+    <string name="music_not_installed">"App Music is not installed"</string>
+    <string name="overlay_permission_denied">"Overlay permission denied"</string>
+
+    <string name="now_key_item_delete_warning">"You will delete all shortcuts, whether close the floating ball?"</string>
+    <string name="now_key_item_delete_warning_yes">"YES"</string>
+    <string name="now_key_item_delete_warning_no">"NO"</string>
+
+    <string name="now_key_function_function_sound_ring">"Ring"</string>
+    <string name="now_key_function_function_sound_mute">"Mute"</string>
+    <string name="now_key_function_function_sound_vibrate">"Vibrate"</string>
+
+    <string name="now_key_reset">"Reset"</string>
+
+    <string name="now_key_call_a_contact_no_number">"has no number"</string>
+    <string name="now_key_app_not_exist">"This app is not exist or uninstalled"</string>
+
+    <string name="now_key_reset_dialog_title">"Reset"</string>
+    <string name="now_key_reset_dialog_content">"Continue to reset all Super Ball items"</string>
+    <string name="now_key_reset_dialog_yes">"Continue"</string>
+    <string name="now_key_reset_dialog_no">@string/button_cancel</string>
+
+    <string name="button_cancel">"Cancel"</string>
+
+    <string name="now_key_reset_toast">"Super Ball has been reset"</string>
+
+    <string name="alexa_app_error">"Sorry, could not open Alexa!"</string>
+    <string name="action_none">"None"</string>
+    <string name="now_key_display_border_title">"Auto-border"</string>
+    <string name="now_key_shortcut_settings_title">"Super Ball shortcuts"</string>
+    <string name="func_Shortcutsinscreen_title">"Main menu"</string>
+    <string name="func_Shortcutsinscreen_title_second">"Secondary menu"</string>
+    <string name="func_illustration">"Super Ball allows you to access specific applications from anywhere"</string>
+    <string name="now_key_option_edit_title">"Shortcuts settings"</string>
+    <string name="help_gesutre_title">"How can I define a gesture?"</string>
+    <string name="help_gesutre_summary">"Access application functions by "double-click" or "long press" floating ball. All gestures can be customised."</string>
+    <string name="help_edit_title">"How can I edit floating menu?"</string>
+    <string name="help_edit_short_description">"To edit floating menu, long press shortcuts."</string>
+    <string name="help_edit_summary">"To edit floating menu, including deleting and adding shortcuts, long press shortcuts."</string>
+    <string name="help_dialog_tips_button">"I KNOW"</string>
+    <string name="nowkey_size_summary">"Super Ball size"</string>
+    <string name="nowkey_opacity_summary">"Super Ball opacity"</string>
+
+    <string name="nowkey_mode">"Mode"</string>
+    <string name="nowkey_mode_normal">"Normal"</string>
+    <string name="nowkey_mode_mini">"Mini"</string>
+    <string name="now_key_option_gesture_and_function_title">"Function &amp; gesture"</string>
+    <string name="three">"3"</string>
+    <string name="four">"4"</string>
+    <string name="five">"5"</string>
+    <string name="seven">"7"</string>
+    <string name="eight">"8"</string>
+    <string name="double_tap">"Double tap"</string>
+    <string name="short_drag">"Short drag"</string>
+    <string name="set_as">"Set as"</string>
+    <string name="nowkey_restored">"Settings reset"</string>
+    <string name="nowkey_undo">"UNDO"</string>
+    <string name="nowkey_introduce_short_drag">"Drag Super Ball into the ring and release, which can trigger a short drag. Its default behaviour is back.\n\nYou can change it in Super Ball settings."</string>
+</resources>

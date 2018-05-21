@@ -1,0 +1,82 @@
+<!-- CR 674472 add by rurong.zhang   -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <LinearLayout
+            android:id="@+id/dragicon"
+            android:layout_width="26dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="19dp"
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/func_reorder" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/funcicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="@color/nowkey_color" />
+
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/functext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:textColor="@color/subscribe_item_text_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/fun_edit"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/func_edit"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/click_remove"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/func_remove" />
+
+        <ImageView
+            android:id="@+id/click_add"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/func_add"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="#dbdbdb" />
+
+</RelativeLayout>

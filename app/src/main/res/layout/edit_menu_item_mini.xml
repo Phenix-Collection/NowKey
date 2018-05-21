@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:orientation="vertical">
+
+    <com.kuding.nowkey.floatview.FloatItemView
+        android:id="@+id/app_layout_mini"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mini_ball_icon_bg_60">
+
+        <ImageView
+            android:id="@+id/app_icon_img_mini"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"/>
+    </com.kuding.nowkey.floatview.FloatItemView>
+</RelativeLayout>

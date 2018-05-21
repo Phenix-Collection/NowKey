@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="theme_colors_title">
+        <item>"Default"</item>
+        <item>"Blue"</item>
+        <item>"Green"</item>
+        <item>"Yellow"</item>
+        <item>"Red"</item>
+        <item>"Pink"</item>
+        <item>"Purple"</item>
+    </string-array>
+    <!--<item>#44ffa0</item>-->
+    <string-array name="theme_colors" translatable="false">
+        <item>#000000</item>
+        <item>#34BCD1</item>
+        <item>#88CC15</item>
+        <item>#FFB415</item>
+        <item>#FE194E</item>
+        <item>#FA699E</item>
+        <item>#5B15BC</item>
+    </string-array>
+
+    <string-array name="entries_floatview_size">
+        <item>Too small</item>
+        <item>small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="entryvalues_floatview_size" translatable="false">
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+
+</resources>

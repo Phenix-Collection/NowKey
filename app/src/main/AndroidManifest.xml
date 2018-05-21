@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kuding.nowkey" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_ORIENTATION" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+
+    <application
+        android:name="com.kuding.nowkey.NowKeyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/super_ball_icon"
+        android:label="@string/application_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kuding.nowkey.ActionActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/TranslucentTheme" />
+
+        <activity
+            android:name="com.kuding.nowkey.NowKeyActivity"
+            android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kuding.nowkey.FirstActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/TranslucentTheme">
+        </activity>
+
+        <receiver
+            android:name="com.kuding.nowkey.functions.lock.NowKeyDeviceAdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/nowkey_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.kuding.nowkey.service.NowKeyService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.FLOATINGBALLSERVICE" />
+            </intent-filter>
+        </service>
+
+        <!-- Nowkey的远程服务-->
+        <service
+            android:name="com.kuding.nowkey.service.NowkeyRemoteService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.kuding.nowkey.service.NowkeyRemoteService" />
+            </intent-filter>
+        </service>
+
+        <!-- modify by yangzhong.gong for defect-5055624 begin -->
+        <!-- add by yangzhong.gong for task-4584915 begin -->
+        <service
+            android:name="com.kuding.nowkey.service.QuickSettingService"
+            android:icon="@drawable/nowkey_on"
+            android:label="@string/application_name"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <!-- add by yangzhong.gong for task-4584915 end -->
+        <!-- modify by yangzhong.gong for defect-5055624 end -->
+
+        <service
+            android:name="com.kuding.nowkey.functions.screenshot.ScreenshotService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".functions.screenshot.GlobalScreenshot$DeleteScreenshotReceiver"
+            android:exported="false"
+            android:process=":screenshot" />
+        <receiver
+            android:name=".functions.screenshot.GlobalScreenshot$TargetChosenReceiver"
+            android:exported="false"
+            android:process=":screenshot" />
+        <!-- add by yangzhong.gong for task-4394007 begin -->
+        <service
+            android:name="com.kuding.nowkey.functions.recent.RecentService"
+            android:label="@string/accessibilityservice_title"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+
+            <!-- add by yangzhong.gong for task-4394007 end -->
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_info" />
+        </service>
+
+        <activity
+            android:name="com.kuding.nowkey.ThemeSettingsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.THEME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kuding.nowkey.GestureSettingsActivity"
+            android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kuding.nowkey.DisplaySettingsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kuding.nowkey.NowKeyEditActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kuding.nowkey.MiniModeEditActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kuding.nowkey.NormalModeEditActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kuding.nowkey.help.NowKeyHelpActivity"
+            android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+
+        <!-- <activity -->
+        <!-- android:name=".functions.screenshot.PreviewPictureActivity" -->
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:windowSoftInputMode="stateUnspecified|adjustPan" /> -->
+
+        <activity
+            android:name="com.kuding.nowkey.functions.screenshot.ScreenshotActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/ScreenshotTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.ScreenshotActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kuding.nowkey.FunctionActivity"
+            android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.FUNCTION" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kuding.nowkey.applist.AppListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLIST" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kuding.nowkey.functions.lock.LockActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.kuding.nowkey.functions.call.CallActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.kuding.nowkey.functions.sound.FunctionSoundMuteActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/SoundPermissionTheme" />
+        <activity
+            android:name="com.kuding.nowkey.functions.recent.RecentActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/RecentTheme" />
+        <activity
+            android:name="com.kuding.nowkey.WarningActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/WarningTheme" />
+        <activity
+            android:name="com.kuding.nowkey.functions.rotate.RotateActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/TranslucentTheme" />
+
+        <receiver android:name="com.kuding.nowkey.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.NOWKEY_NAV_BROADCAST" />
+                <action android:name="com.tct.setupwizard.action.SETUP_WIZARD_FINISHED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

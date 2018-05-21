@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#080821</color>
+    <color name="colorPrimaryDark">#080821</color>
+    <color name="colorAccent">#2552cc</color>
+
+    <color name="nowkey_color">#34BCD1</color>
+    <color name="black">#000000</color>
+    <color name="alpha_black">#7F000000</color>
+    <color name="black_alpha_90">#dd000000</color>
+    <color name="black_alpha_73">#bb000000</color>
+    <color name="black_alpha_60">#99000000</color>
+    <color name="black_alpha_50">#7F000000</color>
+    <color name="black_alpha_25">#25000000</color>
+    <color name="white">#ffffff</color>
+    <color name="alpha_white">#4cffffff</color>
+    <color name="setting_bg_color">#EEEEEE</color>
+    <color name="setting_item_bg_color">#ffffff</color>
+    <color name="setting_gesture_item_bg_color">#fcfcfc</color>
+    <color name="setting_functions_item_bg_color">#fcfcfc</color>
+    <color name="setting_app_item_bg_color">#fcfcfc</color>
+    <color name="setting_title_text_color">#424242</color>
+    <color name="setting_cntent_text_color">#7D7D7D</color>
+    <color name="setting_content_text_color">#424242</color>
+    <color name="setting_button_text_color">#EEEEEE</color>
+    <color name="dialog_bg_color">#fcfcfc</color>
+
+    <color name="volume_icon_color">#ffffffff</color>
+
+    <color name="system_notification_accent_color">#ff607D8B</color>
+
+    <color name="funcsettings_title">#2552cc</color>
+    <color name="boomkey_shortcuts_title">#2552cc</color>
+
+    <color name="text_gray">#7D7D7D</color>
+    <color name="text_dark_gray">#5D5D5D</color>
+    <color name="text_more_dark_gray">#858585</color>
+
+</resources>

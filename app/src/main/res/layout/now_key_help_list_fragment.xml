@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <LinearLayout
+        android:id="@+id/now_key_help_gesure_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_title_height"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            style="@style/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/setting_item_bg_color"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding"
+            android:text="@string/help_gesutre_title" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/now_key_help_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_title_height"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            style="@style/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/setting_item_bg_color"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding"
+            android:text="@string/help_edit_title" />
+
+    </LinearLayout>
+
+</LinearLayout>

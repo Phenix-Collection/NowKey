@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/settings_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/setting_item_bg_color"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/set_as"
+        android:textColor="@color/colorAccent" />
+
+    <ListView
+        android:id="@+id/functions_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:divider="#ffffff"
+        android:dividerHeight="1dp">
+    </ListView>
+
+</LinearLayout>

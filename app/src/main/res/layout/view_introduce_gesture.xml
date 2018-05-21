@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_introduce_text"
+        android:textDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingEnd="60dp"
+        android:paddingStart="20dp"
+        android:text="@string/nowkey_introduce_short_drag"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

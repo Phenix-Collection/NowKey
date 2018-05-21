@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.kuding.nowkey.applist.AppListActivity">
+
+
+    <com.kuding.nowkey.applist.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/edit_background"
+        android:drawableEnd="@drawable/input_delete_icon"
+        android:drawableStart="@drawable/search_icon"
+        android:drawableTint="@color/setting_title_text_color"
+        android:hint="@string/app_list_edittext_hint"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/line_vertiacl"
+        android:textSize="15.0dip" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <!--设置就是设置顶部的字母排序-->
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:text="A"
+                android:textColor="@color/setting_title_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@color/nowkey_color"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.kuding.nowkey.applist.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end|center" />
+    </FrameLayout>
+
+
+</LinearLayout>

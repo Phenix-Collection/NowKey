@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kuding.nowkey.floatview.FloatItemView
+        android:id="@+id/app_layout_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mini_ball_icon_bg_60">
+
+        <ImageView
+            android:id="@+id/app_icon_img_normal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true" />
+    </com.kuding.nowkey.floatview.FloatItemView>
+</RelativeLayout>

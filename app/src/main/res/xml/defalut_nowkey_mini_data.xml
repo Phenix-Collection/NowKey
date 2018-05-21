@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultpage xmlns:nowkey="http://schemas.android.com/apk/res-auto/com.kuding.nowkey">
+    <item
+        nowkey:index="0"
+        nowkey:key_word_page="back"
+        nowkey:type="2" />
+    <item
+        nowkey:index="1"
+        nowkey:key_word_page="home"
+        nowkey:type="2" />
+    <item
+        nowkey:index="2"
+        nowkey:key_word_page="recent"
+        nowkey:type="2" />
+    <item
+        nowkey:index="3"
+        nowkey:key_word_page="screenshot"
+        nowkey:type="2" />
+    <item
+        nowkey:index="4"
+        nowkey:key_word_page="splitscreen"
+        nowkey:type="2" />
+    <item
+        nowkey:index="5"
+        nowkey:key_word_page="lock"
+        nowkey:type="2" />
+    <item
+        nowkey:index="6"
+        nowkey:key_word_page="settings"
+        nowkey:type="2" />
+    <item
+        nowkey:index="7"
+        nowkey:key_word_page="nsettings"
+        nowkey:type="2" />
+</defaultpage>

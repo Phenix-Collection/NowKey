@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.kuding.nowkey.floatview.FloatingBallPanel
+        android:id="@+id/id_circle_panel_first"
+        android:layout_width="@dimen/now_key_float_panel_width"
+        android:layout_height="@dimen/now_key_float_panel_height"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/id_circle_menu_item_center_first"
+            android:layout_width="@dimen/now_key_float_panel_center_width"
+            android:layout_height="@dimen/now_key_float_panel_center_width"
+            android:background="@drawable/panel_center_bg">
+
+            <ImageView
+                android:id="@+id/first_panel_center"
+                android:layout_width="@dimen/now_key_item_icon_width"
+                android:layout_height="@dimen/now_key_item_icon_width"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+    </com.kuding.nowkey.floatview.FloatingBallPanel>
+
+</FrameLayout>

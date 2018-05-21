@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_title_height"
+                android:background="@color/setting_gesture_item_bg_color">
+
+                <LinearLayout
+                    android:id="@+id/double_click_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_title_height"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingEnd="@dimen/setting_item_padding"
+                    android:paddingStart="@dimen/setting_item_padding">
+
+                    <ImageView
+                        android:id="@+id/now_key_gesture_double_img"
+                        android:layout_width="@dimen/setting_icon_width"
+                        android:layout_height="@dimen/setting_icon_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/double_click_png"
+                        android:tint="@color/nowkey_color" />
+
+                    <TextView
+                        android:id="@+id/now_key_gesture_double_title"
+                        style="@style/settings_gesture_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="@dimen/setting_title_icon_padding"
+                        android:text="@string/now_key_option_double_click_title" />
+
+                    <TextView
+                        android:id="@+id/now_key_gesture_double_action"
+                        style="@style/settings_gesture_title"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end|center_vertical"
+                        android:maxLines="1"
+                        android:maxWidth="120dp"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_title_height"
+                android:background="@color/setting_gesture_item_bg_color">
+
+                <LinearLayout
+                    android:id="@+id/long_click_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_title_height"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingEnd="@dimen/setting_item_padding"
+                    android:paddingStart="@dimen/setting_item_padding">
+
+                    <ImageView
+                        android:id="@+id/now_key_gesture_long_img"
+                        android:layout_width="@dimen/setting_icon_width"
+                        android:layout_height="@dimen/setting_icon_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/long_press_icon"
+                        android:tint="@color/nowkey_color" />
+
+                    <TextView
+                        android:id="@+id/now_key_gesture_long_title"
+                        style="@style/settings_gesture_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="@dimen/setting_title_icon_padding"
+                        android:text="@string/now_key_option_long_click_title" />
+
+                    <TextView
+                        android:id="@+id/now_key_gesture_long_action"
+                        style="@style/settings_gesture_title"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end|center_vertical"
+                        android:maxLines="1"
+                        android:maxWidth="120dp"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_black"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/help_gif_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.kuding.nowkey.help.GifView
+                android:id="@+id/tip_dialog_gif"
+                android:layout_width="@dimen/help_gif_width"
+                android:layout_height="@dimen/help_gif_height">
+
+            </com.kuding.nowkey.help.GifView>
+
+            <LinearLayout
+                android:id="@+id/reset_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/now_key_reset_button_height"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/tip_dialog_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/now_key_reset_button_height"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/help_dialog_tips_button"
+                    android:textColor="@color/nowkey_color" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

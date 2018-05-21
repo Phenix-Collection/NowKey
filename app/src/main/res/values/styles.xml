@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ScreenshotTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="RecentTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SoundPermissionTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="WarningTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BlurTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_16_666666">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="dialog_button_text" parent="@style/sdw_white">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Dialog" parent="android:Theme.Material.Light.Dialog.NoActionBar">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="settings_title">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/setting_title_text_size</item>
+        <item name="android:textColor">@color/setting_title_text_color</item>
+    </style>
+
+    <style name="settings_content">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/setting_content_text_size</item>
+        <item name="android:textColor">@color/setting_cntent_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@dimen/setting_content_margin_start_size</item>
+    </style>
+
+    <style name="settings_content_text_content">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/setting_content_text_size</item>
+        <item name="android:textColor">@color/setting_cntent_text_color</item>
+    </style>
+
+    <style name="settings_content_text_title">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/setting_title_text_size2</item>
+        <item name="android:textColor">@color/setting_title_text_color</item>
+    </style>
+
+    <style name="settings_gesture_title">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/setting_title_text_size</item>
+        <item name="android:textColor">@color/setting_title_text_color</item>
+    </style>
+
+    <style name="funcsettings_titletext">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/nowkey_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget_GifView"></style>
+    <style name="PreviewPagerPageIndicator">
+        <item name="dotGap">8dp</item>
+        <item name="pageIndicatorColor">?android:attr/colorControlNormal</item>
+        <item name="currentPageIndicatorColor">?android:attr/colorControlActivated</item>
+    </style>
+
+
+    <style name="settings_text_content">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/setting_title_text_color</item>
+    </style>
+
+    <style name="settings_text_title">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

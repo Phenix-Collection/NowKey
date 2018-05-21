@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingBottom="10dp"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:layout_width="@dimen/setting_icon_width"
+                android:layout_height="@dimen/setting_icon_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/double_click_png"
+                android:tint="@color/nowkey_color" />
+
+            <TextView
+                style="@style/settings_gesture_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/setting_title_icon_padding"
+                android:text="@string/now_key_option_double_click_title" />
+        </LinearLayout>
+
+        <com.kuding.nowkey.help.GifView
+            android:id="@+id/help_double_click_gif"
+            android:layout_width="@dimen/help_gif_width"
+            android:layout_height="@dimen/help_gif_height"
+            android:layout_marginStart="@dimen/help_gif_title_padding_start" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingBottom="10dp"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:layout_width="@dimen/setting_icon_width"
+                android:layout_height="@dimen/setting_icon_height"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/long_press_icon"
+                android:tint="@color/nowkey_color" />
+
+            <TextView
+                style="@style/settings_gesture_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/setting_title_icon_padding"
+                android:text="@string/now_key_option_long_click_title" />
+        </LinearLayout>
+
+        <com.kuding.nowkey.help.GifView
+            android:id="@+id/help_long_click_gif"
+            android:layout_width="@dimen/help_gif_width"
+            android:layout_height="@dimen/help_gif_height"
+            android:layout_marginStart="@dimen/help_gif_title_padding_start" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="@string/help_gesutre_summary" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
