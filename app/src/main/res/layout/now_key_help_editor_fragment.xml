@@ -21,7 +21,7 @@
             android:paddingTop="8dp"
             android:text="@string/help_edit_short_description" />
 
-        <com.kuding.nowkey.help.GifView
+        <com.kuding.superball.help.GifView
             android:id="@+id/help_edit_gif"
             android:layout_width="@dimen/help_gif_width"
             android:layout_height="@dimen/help_gif_height_300"

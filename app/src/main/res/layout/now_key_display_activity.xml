@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/setting_bg_color"
     android:orientation="vertical"
-    tools:context="com.kuding.nowkey.NowKeyActivity">
+    tools:context="com.kuding.superball.NowKeyActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
                     android:paddingTop="2dp">
 
-                    <com.kuding.nowkey.DotsPageIndicator
+                    <com.kuding.superball.DotsPageIndicator
                         android:id="@+id/page_indicator"
                         style="@style/PreviewPagerPageIndicator"
                         android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                         android:gravity="center_vertical"
                         android:paddingTop="8dp">
 
-                        <com.kuding.nowkey.LabeledSeekBar
+                        <com.kuding.superball.LabeledSeekBar
                             android:id="@+id/seek_bar"
                             style="@android:style/Widget.Material.SeekBar.Discrete"
                             android:layout_width="0dp"

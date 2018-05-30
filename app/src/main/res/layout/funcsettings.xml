@@ -23,8 +23,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/func_Shortcutsinscreen_title" />
 
-            <com.kuding.nowkey.drag.DragSortListView
-                xmlns:dslv="http://schemas.android.com/apk/res/com.kuding.nowkey"
+            <com.kuding.superball.drag.DragSortListView
+                xmlns:dslv="http://schemas.android.com/apk/res/com.kuding.superball"
                 android:id="@+id/drag_sort_list_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,8 +50,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/func_Shortcutsinscreen_title_second" />
 
-            <com.kuding.nowkey.drag.DragSortListView
-                xmlns:dslv="http://schemas.android.com/apk/res/com.kuding.nowkey"
+            <com.kuding.superball.drag.DragSortListView
+                xmlns:dslv="http://schemas.android.com/apk/res/com.kuding.superball"
                 android:id="@+id/drag_sort_list_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

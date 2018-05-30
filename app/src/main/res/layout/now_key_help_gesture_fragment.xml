@@ -36,7 +36,7 @@
                 android:text="@string/now_key_option_double_click_title" />
         </LinearLayout>
 
-        <com.kuding.nowkey.help.GifView
+        <com.kuding.superball.help.GifView
             android:id="@+id/help_double_click_gif"
             android:layout_width="@dimen/help_gif_width"
             android:layout_height="@dimen/help_gif_height"
@@ -76,7 +76,7 @@
                 android:text="@string/now_key_option_long_click_title" />
         </LinearLayout>
 
-        <com.kuding.nowkey.help.GifView
+        <com.kuding.superball.help.GifView
             android:id="@+id/help_long_click_gif"
             android:layout_width="@dimen/help_gif_width"
             android:layout_height="@dimen/help_gif_height"

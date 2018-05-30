@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/setting_bg_color"
     android:orientation="vertical"
-    tools:context="com.kuding.nowkey.NowKeyActivity">
+    tools:context="com.kuding.superball.NowKeyActivity">
 
     <ScrollView
         android:layout_width="match_parent"

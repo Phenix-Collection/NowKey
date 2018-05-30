@@ -50,7 +50,7 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/function_mini_bg" />
 
-                <com.kuding.nowkey.views.EditMenuItemView_Mini
+                <com.kuding.superball.views.EditMenuItemView_Mini
                     android:id="@+id/view_menu_item_edit"
                     style="@style/settings_text_title"
                     android:layout_width="172dp"

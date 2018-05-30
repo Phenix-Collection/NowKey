@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.kuding.nowkey.floatview.FloatingPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.kuding.superball.floatview.FloatingPanelFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent">
 
-    <com.kuding.nowkey.floatview.MiniBallPanel
+    <com.kuding.superball.floatview.MiniBallPanel
         android:id="@+id/id_mini_panel"
         android:layout_width="@dimen/mini_float_panel_width"
         android:layout_height="@dimen/mini_float_panel_width"
         android:layout_gravity="center" />
 
-</com.kuding.nowkey.floatview.FloatingPanelFrameLayout>
+</com.kuding.superball.floatview.FloatingPanelFrameLayout>

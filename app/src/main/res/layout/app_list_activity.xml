@@ -7,10 +7,10 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.kuding.nowkey.applist.AppListActivity">
+    tools:context="com.kuding.superball.applist.AppListActivity">
 
 
-    <com.kuding.nowkey.applist.ClearEditText
+    <com.kuding.superball.applist.ClearEditText
         android:id="@+id/filter_edit"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             android:textSize="30.0dip"
             android:visibility="invisible" />
 
-        <com.kuding.nowkey.applist.SideBar
+        <com.kuding.superball.applist.SideBar
             android:id="@+id/sidrbar"
             android:layout_width="30.0dip"
             android:layout_height="fill_parent"

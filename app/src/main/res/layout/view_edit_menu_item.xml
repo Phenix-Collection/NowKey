@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent">
 
-    <com.kuding.nowkey.floatview.FloatingBallPanel
+    <com.kuding.superball.floatview.FloatingBallPanel
         android:id="@+id/id_circle_panel_first"
         android:layout_width="@dimen/now_key_float_panel_width"
         android:layout_height="@dimen/now_key_float_panel_height"
@@ -26,6 +26,6 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/more" />
         </RelativeLayout>
-    </com.kuding.nowkey.floatview.FloatingBallPanel>
+    </com.kuding.superball.floatview.FloatingBallPanel>
 
 </FrameLayout>

@@ -128,12 +128,12 @@
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <com.kuding.nowkey.help.GifView
+            <com.kuding.superball.help.GifView
                 android:id="@+id/tip_dialog_gif"
                 android:layout_width="@dimen/help_gif_width"
                 android:layout_height="@dimen/help_gif_height">
 
-            </com.kuding.nowkey.help.GifView>
+            </com.kuding.superball.help.GifView>
 
             <LinearLayout
                 android:id="@+id/reset_button_layout"

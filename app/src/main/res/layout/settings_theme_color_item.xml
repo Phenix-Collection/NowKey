@@ -22,7 +22,7 @@
                 android:layout_width="@dimen/setting_theme_title_height"
                 android:layout_height="@dimen/setting_theme_title_height">
 
-                <com.kuding.nowkey.floatview.RoundImageView
+                <com.kuding.superball.floatview.RoundImageView
                     android:id="@+id/theme_color_icon"
                     android:layout_width="28dp"
                     android:layout_height="28dp"

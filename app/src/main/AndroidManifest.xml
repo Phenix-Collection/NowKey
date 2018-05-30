@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kuding.nowkey" >
+    package="com.kuding.superball" >
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
@@ -9,44 +9,37 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
-    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
-    <uses-permission android:name="android.permission.SET_ORIENTATION" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.INJECT_EVENTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.kuding.nowkey.NowKeyApplication"
-        android:allowBackup="true"
-        android:icon="@drawable/super_ball_icon"
+        android:name="com.kuding.superball.NowKeyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_super_ball"
         android:label="@string/application_name"
         android:persistent="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.kuding.nowkey.ActionActivity"
+            android:name="com.kuding.superball.ActionActivity"
             android:excludeFromRecents="true"
             android:theme="@style/TranslucentTheme" />
 
         <activity
-            android:name="com.kuding.nowkey.NowKeyActivity"
+            android:name="com.kuding.superball.NowKeyActivity"
             android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
             android:excludeFromRecents="true"
-            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
@@ -57,13 +50,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kuding.nowkey.FirstActivity"
+            android:name="com.kuding.superball.FirstActivity"
             android:excludeFromRecents="true"
             android:theme="@style/TranslucentTheme">
         </activity>
 
         <receiver
-            android:name="com.kuding.nowkey.functions.lock.NowKeyDeviceAdminReceiver"
+            android:name="com.kuding.superball.functions.lock.NowKeyDeviceAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <meta-data
                 android:name="android.app.device_admin"
@@ -75,9 +68,9 @@
         </receiver>
 
         <service
-            android:name="com.kuding.nowkey.service.NowKeyService"
+            android:name="com.kuding.superball.service.NowKeyService"
             android:enabled="true"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.FLOATINGBALLSERVICE" />
             </intent-filter>
@@ -85,22 +78,22 @@
 
         <!-- Nowkey的远程服务-->
         <service
-            android:name="com.kuding.nowkey.service.NowkeyRemoteService"
+            android:name="com.kuding.superball.service.NowkeyRemoteService"
             android:enabled="true"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
-                <action android:name="com.kuding.nowkey.service.NowkeyRemoteService" />
+                <action android:name="com.kuding.superball.service.NowkeyRemoteService" />
             </intent-filter>
         </service>
 
         <!-- modify by yangzhong.gong for defect-5055624 begin -->
         <!-- add by yangzhong.gong for task-4584915 begin -->
         <service
-            android:name="com.kuding.nowkey.service.QuickSettingService"
+            android:name="com.kuding.superball.service.QuickSettingService"
             android:icon="@drawable/nowkey_on"
             android:label="@string/application_name"
             android:enabled="true"
-            android:exported="true"
+            android:exported="false"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
@@ -110,7 +103,7 @@
         <!-- modify by yangzhong.gong for defect-5055624 end -->
 
         <service
-            android:name="com.kuding.nowkey.functions.screenshot.ScreenshotService"
+            android:name="com.kuding.superball.functions.screenshot.ScreenshotService"
             android:exported="false" />
 
         <receiver
@@ -123,7 +116,7 @@
             android:process=":screenshot" />
         <!-- add by yangzhong.gong for task-4394007 begin -->
         <service
-            android:name="com.kuding.nowkey.functions.recent.RecentService"
+            android:name="com.kuding.superball.functions.recent.RecentService"
             android:label="@string/accessibilityservice_title"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
 
@@ -138,7 +131,7 @@
         </service>
 
         <activity
-            android:name="com.kuding.nowkey.ThemeSettingsActivity"
+            android:name="com.kuding.superball.ThemeSettingsActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -146,28 +139,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kuding.nowkey.GestureSettingsActivity"
+            android:name="com.kuding.superball.GestureSettingsActivity"
             android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.kuding.nowkey.DisplaySettingsActivity"
+            android:name="com.kuding.superball.DisplaySettingsActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.kuding.nowkey.NowKeyEditActivity"
+            android:name="com.kuding.superball.NowKeyEditActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.kuding.nowkey.MiniModeEditActivity"
+            android:name="com.kuding.superball.MiniModeEditActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.kuding.nowkey.NormalModeEditActivity"
+            android:name="com.kuding.superball.NormalModeEditActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.kuding.nowkey.help.NowKeyHelpActivity"
+            android:name="com.kuding.superball.help.NowKeyHelpActivity"
             android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait" />
@@ -178,7 +171,7 @@
         <!-- android:windowSoftInputMode="stateUnspecified|adjustPan" /> -->
 
         <activity
-            android:name="com.kuding.nowkey.functions.screenshot.ScreenshotActivity"
+            android:name="com.kuding.superball.functions.screenshot.ScreenshotActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:theme="@style/ScreenshotTheme">
@@ -187,7 +180,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kuding.nowkey.FunctionActivity"
+            android:name="com.kuding.superball.FunctionActivity"
             android:configChanges="screenSize|mcc|mnc|orientation|keyboard|screenLayout"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait">
@@ -196,7 +189,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kuding.nowkey.applist.AppListActivity"
+            android:name="com.kuding.superball.applist.AppListActivity"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
@@ -205,31 +198,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kuding.nowkey.functions.lock.LockActivity"
+            android:name="com.kuding.superball.functions.lock.LockActivity"
             android:excludeFromRecents="true"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name="com.kuding.nowkey.functions.call.CallActivity"
+            android:name="com.kuding.superball.functions.call.CallActivity"
             android:excludeFromRecents="true"
             android:theme="@style/TranslucentTheme" />
         <activity
-            android:name="com.kuding.nowkey.functions.sound.FunctionSoundMuteActivity"
+            android:name="com.kuding.superball.functions.sound.FunctionSoundMuteActivity"
             android:excludeFromRecents="true"
             android:theme="@style/SoundPermissionTheme" />
         <activity
-            android:name="com.kuding.nowkey.functions.recent.RecentActivity"
+            android:name="com.kuding.superball.functions.recent.RecentActivity"
             android:excludeFromRecents="true"
             android:theme="@style/RecentTheme" />
         <activity
-            android:name="com.kuding.nowkey.WarningActivity"
+            android:name="com.kuding.superball.WarningActivity"
             android:excludeFromRecents="true"
             android:theme="@style/WarningTheme" />
         <activity
-            android:name="com.kuding.nowkey.functions.rotate.RotateActivity"
+            android:name="com.kuding.superball.functions.rotate.RotateActivity"
             android:excludeFromRecents="true"
             android:theme="@style/TranslucentTheme" />
 
-        <receiver android:name="com.kuding.nowkey.BootReceiver">
+        <receiver android:name="com.kuding.superball.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.USER_PRESENT" />

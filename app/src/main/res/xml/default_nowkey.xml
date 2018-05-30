@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<defaultnowkey xmlns:nowkey="http://schemas.android.com/apk/res-auto/com.kuding.nowkey">
+<defaultnowkey xmlns:nowkey="http://schemas.android.com/apk/res-auto/com.kuding.superball">
     <!--public static final int GROUP_APP_ID = 0;-->
     <!--public static final int GROUP_OPERATION_ID = 1;-->
     <!--public static final int GROUP_FUNCTION_ID = 2;-->
